@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/suixin1.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+						function dispartime()
+						{
+							var time = new Date();
+							var hour = time.getHours();
+							var minute = time.getMinutes();
+							var second = time.getSeconds();
+							if (minute < 10)
+								minute="0"+minute;
+							if (second < 10)
+								second="0"+second;
+							document.getElementById("time").innerHTML="<span id='hour'>"+hour+"</span>:<span id='minute'>" + minute+"</span>:<span id='second'>"+second+"</span>";
+							
+							var myTime = setInterval("dispartime()",1000);
+						}
+						</script>
+	</head>
+	<body class="bgp" onload="dispartime()">
+		<div class="bananer">
+			<div class="toptime">
+					当前时间:<p  id="time"style= color: white; font-size: 50px; height: 20px;"></p>
+			</div>
+			<a href="summer.html" class="shouye">首页</a>
+		</div>
+		<div class="container1">
+			<div class="card">
+				<div class="content">
+					<h2>01</h2>
+					<h3>Card One</h3>
+					<p>昨天属于历史，明天神秘莫测，而今天是赐予我们的礼物，所以我们把今天称为“礼物”
+						yesterday is history，tomorrow is a mystery，only today is a gift，that is why we call it "present".
+					</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>02</h2>
+					<h3>Card Two</h3>
+					<p>生命是有光的。
+						在我熄灭以前，能够照亮你一点，就是我所有能做的了。
+						我爱你，你要记得我。——《云边有个小卖部》
+					</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>03</h2>
+					<h3>Card Three</h3>
+					<p>同一本书，却每一页都不相同.....这才是它应有的样子
+													——《寻找天堂》
+					</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

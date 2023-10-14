@@ -37,6 +37,24 @@ body{
 	outline: none;
 	margin: 12px auto;
 }
+.lable_name{
+	position: absolute;
+	width: 280px;
+	height: 20px;
+	font-size: 10px;
+	color: red;
+	top: 240px;
+	left: 35px;
+}
+.lable_pwd{
+	position: absolute;
+	width: 280px;
+	height: 20px;
+	font-size: 10px;
+	color: red;
+	top: 295px;
+	left: 35px;
+}
 .register_container button{
 	width: 280px;
 	height: 40px;

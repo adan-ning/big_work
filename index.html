@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../big wok/css/index.css">
+		<script src="javascript/index.js"></script>
+		
+	</head>
+	<body>
+		<div id="banner">
+			<nav>
+				<a href="">所有电影</a>
+			</nav>
+			<nav>
+				<a href="">连载剧集</a>
+			</nav>
+			<nav>
+				<a href="">本季新番</a>
+			</nav>
+			<nav>
+				<a href="suixin.html">电影</a>
+				<ul class="list">
+					<li class="list1">华语电影</li>
+					<li class="list1">日韩电影</li>
+					<li class="list1">欧美电影</li>
+					<li class="list1">豆瓣电影Top100</li>
+				</ul>
+			</nav>
+			<nav>
+				<a href="suixin.html">剧集</a>
+				<ul class="list">
+					<li class="list1">华语剧</li>
+					<li class="list1">日剧</li>
+					<li class="list1">欧美剧</li>
+					<li class="list1">韩剧</li>
+				</ul>
+			</nav>
+			<div id="search">
+				<input type="text" id="search_text" placeholder="  搜点什么??">
+				<div id="img">
+					<img src="../big wok/image/search.png" alt="" width="17px" height="17px">
+				</div>
+			</div>
+		</div>
+		<div id="lunbo">
+			<ul id="imglist">
+				<li><img src="../big wok/image/wali.jpg" alt=""></li>
+				<li><img src="../big wok/image/tureman1.jpg" alt="" ></li>
+				<li><img src="../big wok/image/liulang.jpg" alt=""></li>
+				<li><img src="../big wok/image/xingji.jpg"></li>
+				<li><img src="../big wok/image/wali.jpg" alt=""></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul id="iconlist">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="shell">
+			<div class="box" id="box">
+				<img src="image/spider man.jpg" alt="">
+				<p>动作</p>
+			</div>
+			<div class="box">
+				<img src="image/groot.jpg" alt="">
+				<p>喜剧</p>
+			</div>
+			<div class="box">
+				<img src="image/lingya.jpg" alt="">
+				<p>爱情</p>
+			</div>
+			<div class="box">
+				<img src="image/start.jpg" alt="">
+				<p>科幻</p>
+			</div>
+			<div class="box">
+				<img src="image/scary.jpg" alt="">
+				<p>恐怖</p>
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="movie">
+				<div class="card">
+					<p>喜剧之王</p>
+				</div>
+			</div>
+			<div class="movie" id="movie1">
+				<div class="card">
+					<p>阿索卡</p>
+				</div>
+			</div>
+			<div class="movie" id="movie2">
+				<div class="card">
+					<p>流浪地球</p>
+				</div>
+			</div>
+			<div class="movie" id="movie3">
+				<div class="card">
+					<p>俄罗斯方块</p>
+				</div>
+			</div>
+			<div class="movie" id="movie4">
+				<div class="card">
+					<p>猫鼠游戏</p>
+				</div>
+			</div>
+		</div>
+		<div id="container1">
+			<div class="movie1" id="movie21">
+				<div class="card1">
+					<p>黑客帝国</p>
+				</div>
+			</div>
+			<div class="movie1" id="movie22">
+				<div class="card1">
+					<p>英雄本色</p>
+				</div>
+			</div>
+			<div class="movie1" id="movie23">
+				<div class="card1">
+					<p>姜子牙</p>
+				</div>
+			</div>
+			<div class="movie1" id="movie24">
+				<div class="card1">
+					<p>新 假面骑士</p>
+				</div>
+			</div>
+			<div class="movie1" id="movie25">
+				<div class="card1">
+					<p>功夫</p>
+				</div>
+			</div>
+		</div>
+		<div id="container2">
+			<div class="movie2" id="movie31">
+				<div class="card2">
+					<p>铃牙之旅</p>
+				</div>
+			</div>
+			<div class="movie2" id="movie32">
+				<div class="card2">
+					<p>超级马力欧兄弟大电影</p>
+				</div>
+			</div>
+			<div class="movie2" id="movie33">
+				<div class="card2">
+					<p>瑞克与莫迪</p>
+				</div>
+			</div>
+			<div class="movie2" id="movie34">
+				<div class="card2">
+					<p>海上钢琴师</p>
+				</div>
+			</div>
+			<div class="movie2" id="movie35">
+				<div class="card2">
+					<p>千与千寻</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			var eprve = document.querySelector('.prev');
+			var enext = document.querySelector('.next');
+			var left = 0;
+			var timer;
+			var esicon = document.getElementById("iconlist").getElementsByTagName("li");
+			var eimglist = document.querySelector('#imglist');
+			run();
+			function run() {
+				if (left <= -2720) {
+					left=0;
+				}
+				var m = Math.floor(-left/680);
+				document.getElementById("imglist").style.marginLeft = left + 'px';
+				var n = ( left % 680 == 0) ? n=1200 : n=10;
+				left -= 10;
+				timer = setTimeout(run,n);
+				iconchange(m);
+			}
+			function imgchange(n){
+				let lt = -(n*680);
+				document.getElementById("imglist").style.marginLeft = lt + 'px';
+				left = lt;
+			}
+			eprve.onclick = function(){
+				let prevgo = Math.floor(-left /680) -1;
+				if(prevgo == -1){
+					prevgo = 3;
+				}
+				imgchange(prevgo);
+			}
+			enext.onclick = function(){
+				let prnext = Math.floor(-left /680) +1;
+				if(prnext == 4){
+					prnext = 0;
+				}
+				imgchange(prnext);
+			}
+			function iconchange(m){
+				for(let index=0;index < esicon.length;index++){
+					esicon[index].style.backgroundColor='';
+				}
+				if(m<esicon.length){
+					esicon[m].style.backgroundColor= 'white';
+				}
+			}
+			eimglist.onmouseover = function() {
+				clearTimeout(timer);
+			}
+			eimglist.onmouseout = function() {
+				run();
+			}
+		</script>
+	</body>
+</html>

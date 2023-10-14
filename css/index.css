@@ -14,7 +14,7 @@ body{
 	position: absolute;
 	height: 180px;
 	width: 1920px;
-	background-image: url("../image/banner.jpg");
+	background-image: url("image/banner.jpg");
 	top: 0px;
 }
 nav{
@@ -215,14 +215,14 @@ a .list{
 .movie{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/joke.jpg);
+	background-image: url(image/joke.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie1{
 	width: 270px; 
 	height: 400px;
-	background-image: url(../image/ahska.jpg);
+	background-image: url(image/ahska.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -230,21 +230,21 @@ a .list{
 #movie2{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/earth.jpg);
+	background-image: url(image/earth.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie3{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/fangkuai.jpg);
+	background-image: url(image/fangkuai.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie4{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/catandmouse.jpg);
+	background-image: url(image/catandmouse.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -298,14 +298,14 @@ a .list{
 #movie21{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/heike.jpg);
+	background-image: url(image/heike.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie22{
 	width: 270px; 
 	height: 400px;
-	background-image: url(../image/hero.jpg);
+	background-image: url(image/hero.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -313,21 +313,21 @@ a .list{
 #movie23{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/jiangziya.jpg);
+	background-image: url(image/jiangziya.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie24{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/kaman.jpg);
+	background-image: url(image/kaman.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie25{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/kongfu.jpg);
+	background-image: url(image/kongfu.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -383,14 +383,14 @@ a .list{
 #movie31{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/lingya.jpg);
+	background-image: url(image/lingya.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie32{
 	width: 270px; 
 	height: 400px;
-	background-image: url(../image/mario.jpg);
+	background-image: url(image/mario.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -398,21 +398,21 @@ a .list{
 #movie33{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/rick.jpg);
+	background-image: url(image/rick.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie34{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/piano.jpg);
+	background-image: url(image/piano.jpg);
 	background-position: center;
 	background-size: cover;
 }
 #movie35{
 	width: 270px;
 	height: 400px;
-	background-image: url(../image/qianyuqianxun.jpg);
+	background-image: url(image/qianyuqianxun.jpg);
 	background-position: center;
 	background-size: cover;
 }
